@@ -172,7 +172,7 @@ export default function Home() {
                   <div key={i} className="glass-card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                        <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '50%', background: h.has_cycle ? 'var(--error)' : 'var(--primary)', display: 'flex', alignItems: 'center', justifyCenter: 'center', fontWeight: '700', fontSize: '1.2rem', justifyContent: 'center' }}>
+                        <div style={{ width: '2.5rem', height: '2.5rem', borderRadius: '50%', background: h.has_cycle ? 'var(--error)' : 'var(--primary)', display: 'flex', alignItems: 'center', fontWeight: '700', fontSize: '1.2rem', justifyContent: 'center' }}>
                           {h.root}
                         </div>
                         <div>
@@ -184,7 +184,7 @@ export default function Home() {
                       </div>
                       {h.has_cycle && <span className="badge badge-error">Cycle Detected</span>}
                     </div>
-                    
+
                     {!h.has_cycle ? (
                       <div style={{ background: 'rgba(0,0,0,0.2)', padding: '1.5rem', borderRadius: '1rem', border: '1px solid var(--card-border)' }}>
                         <TreeView data={h.tree} />
