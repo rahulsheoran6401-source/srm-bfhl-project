@@ -20,9 +20,9 @@ export async function POST(request: Request) {
       return NextResponse.json({ is_success: false, message: "Invalid input: data must be an array" }, { status: 400 });
     }
 
-    const user_id = "rahul_24042026"; // TODO: Update with actual if needed
-    const email_id = "rahul@college.edu";
-    const college_roll_number = "21CS1001";
+    const user_id = "rahulsheoran_24042026";
+    const email_id = "rs3604@srmist.edu.in";
+    const college_roll_number = "RA2311030010256";
 
     const invalid_entries: string[] = [];
     const duplicate_edges: string[] = [];

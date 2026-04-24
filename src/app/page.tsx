@@ -46,7 +46,7 @@ export default function Home() {
         throw new Error("Input must be a JSON array of strings.");
       }
 
-      const res = await fetch('/api/bfhl', {
+      const res = await fetch('/bfhl', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
