@@ -218,7 +218,7 @@ export async function POST(request: Request) {
       summary: {
         total_trees,
         total_cycles,
-        largest_tree_root: largest_tree_root || (total_trees > 0 ? "" : undefined)
+        largest_tree_root: largest_tree_root || ""
       }
     };
 
